@@ -15,9 +15,11 @@ def check_digit(sequence: List[int], x: int) -> object:
     return False
 
 
-def generate_sequence(length: int) -> List[int]:
-    return [rand(1, 100) for i in range(length)]
+def generate_sequence(length_seq: int) -> List[int]:
+    return [rand(1, 100) for i in range(length_seq)]
 
+
+print('№4')
 
 while True:
     length = input('Enter number of elements in sequence: ')

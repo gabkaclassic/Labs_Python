@@ -1,6 +1,6 @@
-def hofstadter_f_m(n: int) -> (int, int):
+def hofstadter_f_m(number: int) -> (int, int):
     count = 0
-    while count < n:
+    while count < number:
         def F(n: int) -> int:
             return 1 if n == 0 else n - M(F(n - 1))
 
@@ -10,6 +10,8 @@ def hofstadter_f_m(n: int) -> (int, int):
         yield F(count), M(count)
         count += 1
 
+
+print('№2')
 
 while True:
     n = input('Enter n: ')

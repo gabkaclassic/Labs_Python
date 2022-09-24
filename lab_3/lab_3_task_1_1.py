@@ -30,6 +30,8 @@ def enter_fraction():
     return n, m
 
 
+print('№1')
+
 while True:
     result = reducer(enter_fraction())
     print(result[0], '/', result[1])

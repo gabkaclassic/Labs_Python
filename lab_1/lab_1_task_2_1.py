@@ -1,15 +1,17 @@
 def example():
-    l = list()
+    list = list()
     list_input(l)
     print(count_steps(l))
+
 
 def list_input(l):
     try:
         arr = list(input('Array of integers: ').split(' '))
         for i in arr:
             l.append(int(i))
-    except:
+    except exec():
         raise Exception("Invalid values of integer!")
+
 
 def count_steps(a):
     count = 0
@@ -29,6 +31,7 @@ def count_steps(a):
 
     return count
 
-def decrement(begin, end, min, a):
+
+def decrement(begin, end, minimum, a):
     for i in range(begin, end):
-        a[i] -= min
+        a[i] -= minimum
